@@ -11,7 +11,7 @@ RUN set -x \
     && wget -O /qshell.tar.gz https://devtools.qiniu.com/${FILENAME}.tar.gz \
     && mkdir /dist \
     && tar -zxvf /qshell.tar.gz -C /dist \
-    && mv /dist/${FILENAME} /qshell
+    && mv /dist/qshell /qshell
 
 FROM alpine
 
