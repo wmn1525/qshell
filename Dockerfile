@@ -10,7 +10,7 @@ ENV FILENAME qshell-${VERSION}-${OS}-${ARCH}${EXT}
 RUN set -x \
     && wget -O /qshell.tar.gz https://devtools.qiniu.com/${FILENAME}.tar.gz \
     && mkdir /dist \
-    && unzip /qshell.tar.gz -d /dist \
+    && tar -zxvf /qshell.tar.gz -C /dist \
     && mv /dist/${FILENAME} /qshell
 
 FROM alpine
