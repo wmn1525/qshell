@@ -1,7 +1,7 @@
 FROM busybox AS build
 
 ARG OS=linux
-ARG ARCH=linux-386
+ARG ARCH=386
 ARG VERSION=v2.6.2
 ARG EXT
 
